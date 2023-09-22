@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio!</title>
+    <link rel="my icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="./css/style.production.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <img src="./img/logo1.png" alt="Logo from Ali Lein." height="60" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation"></li>
+                <a role="menuitem" href="index.html"
+                    class="navigation-list__item navigation-list__item--active">Home</a>
+                <li role="presentation"></li>
+                <a role="menuitem" href="about.html" class="navigation-list__item">About me</a>
+                <li role="presentation"></li>
+                <a role="menuitem" href="contact.html" class="navigation-list__item">Contact</a>
+                <li role="presentation"></li>
+                <a role="menuitem" href="work.html" class="navigation-list__item">Work</a>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="h1--contact">&lt; Contact&gt;</h1>
+    <main id="main_contact">
+        <div id="main__left--div">
+            <h2>Ali Lein</h2>
+            <p>Müllerstr. 65</p>
+            <p>12435 Berlin</p>
+            <p>Deutschland</p>
+        </div>
+        <div id="main__right--div">
+            <a href="tel:+49 30 4849 2016">Tel: +49 30 4849 2016</a>
+            <br><br>
+            <a href="mailto:ali_lein@web.de">Email: ali_lein@web.de </a>
+            <br><br>
+            <a href="mailto:ali_lein@web.de">Contact me!</a>
+        </div>
+    </main>
+    <footer>
+        <form action="" method="post" id="contact-form">
+            <label for="name" class="standard-label">Name </label>
+            <input type="name" id="name" required>
+            <br>
+            <label for="email" class="standard-label">Email: </label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="telephone" class="standard-label">Telephone: </label>
+            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone" placeholder="0012-345-5678-9012">
+            <br>
+            <label for="message" class="standard-label">Message: </label>
+            <textarea maxlength="240" required id="message"></textarea>
+            <br>
+            <button type="submit">Please submit your inquiry</button>
+        </form>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
