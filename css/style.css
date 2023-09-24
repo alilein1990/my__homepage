@@ -33,23 +33,33 @@ body {
     margin-left: 15px;
 }
 
-.about-main,
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-}
-.profile{
-    padding-bottom: 250px;
-}
 .about-main {
-    text-align: center;
+    display: flex;
+    margin: 0 40px;
     list-style-type: none;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+}
+
+.main2__left--div {
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.main2__right--div {
+    justify-content: flex-end;
+    margin-left: 100px;
+
 }
 
 .about-main-ul {
     list-style: none;
     margin-bottom: 40px;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 250px;
 }
 
 .profile__portrait {
@@ -58,9 +68,15 @@ body {
     margin-right: 50px;
     border-radius: 50%;
 }
-.profile__div{
+
+.profile__div {
     padding-top: 20px;
 }
+
+.index_h1 {
+    -webkit-text-stroke: var(--black) 1px;
+}
+
 .page-footer {
     clear: both;
     display: flex;
@@ -100,8 +116,8 @@ th {
 
 th,
 td {
-    width: 300px;
-    
+    width: 130px;
+
 }
 
 th {
@@ -109,13 +125,16 @@ th {
     background-color: var(--secondary-color);
     transition: all 0.5s ease-in-out;
 }
-th:hover{
+
+th:hover {
     opacity: 0.7;
     background-color: var(--primary-color);
 }
-td{
+
+td {
     padding: 15px;
 }
+
 
 .page-header {
     display: flex;
@@ -158,12 +177,14 @@ td{
     margin-left: 40px;
     margin-top: 40px;
 }
-.contact__a{
+
+.contact__a {
     -webkit-text-stroke: var(--third-color) 0.8px;
-    text-decoration: none; 
+    text-decoration: none;
     transition: opacity 0.3s ease;
 }
-.contact__a:hover{
+
+.contact__a:hover {
     opacity: 0.7;
 }
 
@@ -195,16 +216,19 @@ textarea {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 input:hover,
 textarea:hover {
     transform: scale(1.05);
 }
+
 /*removs the arrows from number field*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 button[type=submit]:hover,
 button[type=submit]:focus,
 .button:hover,
@@ -236,7 +260,7 @@ button,
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-    
+
     }
 
     .grid__item {
