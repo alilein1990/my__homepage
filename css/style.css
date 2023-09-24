@@ -78,7 +78,7 @@ header {
 }
 
 
-.work__h1 {
+.h1 {
     text-align: center;
     margin-bottom: 50px;
     -webkit-text-stroke: var(--black) 1px;
@@ -126,10 +126,6 @@ th {
     text-decoration: none;
 }
 
-#h1--contact {
-    text-align: center;
-}
-
 #main_contact {
     display: flex;
     margin-bottom: 20px;
@@ -147,7 +143,7 @@ th {
     margin-top: 20px;
 }
 .contact__a{
-    color: var(--third-color);
+    -webkit-text-stroke: var(--third-color) 0.6px;
     text-decoration: none;
 }
 
@@ -182,7 +178,7 @@ textarea {
 }
 input:hover,
 textarea:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 /*removs the arrows from number field*/
 input::-webkit-outer-spin-button,
@@ -200,8 +196,6 @@ button[type=submit]:focus,
     color: var(--black);
     text-decoration: none;
 }
-
-
 
 button,
 .button {
