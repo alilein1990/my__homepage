@@ -113,9 +113,8 @@ a:hover {
   text-decoration: underline;
   color: white;
   background-color: #5e6061;
-  border: 0.3rem solid; 
-  margin: -30px;
 }
+
 
 a:focus {
   /* No underlining when hovering over a link */
