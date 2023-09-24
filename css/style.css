@@ -37,25 +37,30 @@ body {
 .profile {
     max-width: 700px;
     margin: 0 auto;
-    padding-bottom: 50px;
 }
-
+.profile{
+    padding-bottom: 250px;
+}
 .about-main {
     text-align: center;
     list-style-type: none;
+    padding-bottom: 150px;
 }
 
 .about-main-ul {
     list-style: none;
+    margin-bottom: 40px;
 }
 
 .profile__portrait {
     float: left;
     width: 250px;
-    margin-right: 40px;
+    margin-right: 50px;
     border-radius: 50%;
 }
-
+.profile__div{
+    padding-top: 20px;
+}
 .page-footer {
     clear: both;
     display: flex;
@@ -80,14 +85,15 @@ header {
 
 .h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     -webkit-text-stroke: var(--black) 1px;
 }
 
 table,
 th {
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--secondary-color);
     margin: auto;
+    margin-bottom: 40px;
     padding: 0.5%;
     border-radius: 9px;
 }
@@ -95,10 +101,20 @@ th {
 th,
 td {
     width: 300px;
+    
 }
 
 th {
     -webkit-text-stroke: var(--black) 1px;
+    background-color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+}
+th:hover{
+    opacity: 0.7;
+    background-color: var(--primary-color);
+}
+td{
+    padding: 15px;
 }
 
 .page-header {
@@ -132,19 +148,23 @@ th {
     justify-content: center;
 }
 
-#main__left--div {
+.main__left--div {
     justify-content: flex-end;
     text-align: right;
 }
 
-#main__right--div {
+.main__right--div {
     justify-content: flex-start;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .contact__a{
-    -webkit-text-stroke: var(--third-color) 0.6px;
-    text-decoration: none;
+    -webkit-text-stroke: var(--third-color) 0.8px;
+    text-decoration: none; 
+    transition: opacity 0.3s ease;
+}
+.contact__a:hover{
+    opacity: 0.7;
 }
 
 form {
@@ -155,7 +175,6 @@ form {
     padding: 20px 40px;
     border-radius: 5px;
     border: 8px solid var(--white);
-    
 }
 
 label {
