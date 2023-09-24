@@ -1,19 +1,21 @@
 :root {
-    --background-color: #F5F5F5;
+    --page-color: #F5F5F5;
     --body-font-family: 'Montserrat', sans-serif;
     --body-font-weight: 600;
 
-    --th-button-color: black;
-    --border-button-color: rgba(0, 0, 0, 0.3);
+    --black: black;
+    --white: white;
+    --border-button-color: rgba(0, 0, 0, 0.8);
 
     --primary-color: rgb(206, 223, 227);
-    --secondary-color: #E5B499;
-    --a-visited-color:rgb(28, 28, 71);
- 
-    --buttonhover-color:#E0B59F;
-    --sun-0:#edc655;
-    --sun-50:#fcffad;
-    --sun-100:#f76414;
+    --secondary-color: rgb(111, 157, 168);
+    --third-color: rgb(16, 80, 98);
+    --buttonhover-color: white;
+    --a-visited-color: rgb(28, 28, 71);
+
+    --sun-0: #edc655;
+    --sun-50: #fcffad;
+    --sun-100: #f76414;
 }
 
 * {
@@ -21,10 +23,9 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--page-color);
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
-
 }
 
 .navigation-list li {
@@ -63,7 +64,7 @@ body {
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: var(--primary-color) ;
+    background-color: var(--primary-color);
 }
 
 header {
@@ -76,7 +77,14 @@ header {
     width: 33%;
 }
 
-table,
+
+.work__h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    -webkit-text-stroke: var(--black) 1px;
+}
+
+
 th {
     border: 3px solid var(--primary-color);
     margin: auto;
@@ -90,30 +98,7 @@ td {
 }
 
 th {
-    -webkit-text-stroke: var(--th-button-color) 1px;
-}
-
-a {
-    color: var(--a-color);
-    text-decoration: none;
-    border: none;
-    display: inline-block;
-    padding: 8px;
-    border-radius: 15px;
-    transition: all 0.25s ease-out;
-}
-
-a:visited {
-    /* visited link */
-    color: var(--a-visited-color);
-}
-
-a:hover,
-a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: underline;
-    background-color: var(--secondary-color);
-    /* border: 1rem solid; */
+    -webkit-text-stroke: var(--black) 1px;
 }
 
 .page-header {
@@ -161,6 +146,10 @@ a:focus {
     margin-left: 40px;
     margin-top: 20px;
 }
+.contact__a{
+    color: var(--third-color);
+    text-decoration: none;
+}
 
 form {
     background-color: var(--primary-color);
@@ -179,7 +168,7 @@ button[type=submit]:focus,
     background-color: var(--buttonhover-color);
     opacity: 0.8;
     cursor: pointer;
-    color: var(--th-button-color);
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -214,27 +203,43 @@ button,
     display: inline-block;
     font-family: inherit;
     background-color: var(--secondary-color);
-    color: var(--th-button-color);
+    color: var(--white);
     font-weight: bold;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
     border-bottom: 2px solid var(--border-button-color);
-    transition: opacity 0.2s;
+    transition: all 0.85s;
 }
 
 @supports (display: grid) {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        grid-gap: 30px;
+    
     }
 
     .grid__item {
+        background-color: var(--white);
+        border-radius: 10px;
+        border: 15px solid var(--primary-color);
+        width: 90%;
+        justify-self: center;
+    }
+
+    .grid__item--link {
+        color: var(--black);
+        padding: 3px;
+        transition: all 0.5s;
+    }
+
+    .grid__item--link:hover {
+        margin: -20px;
         background-color: var(--primary-color);
         border-radius: 10px;
-        border: 2px solid var(--secondary-color);
-        width: 100%;
+        text-decoration: none;
+        border: 4px solid var(--white);
     }
 }
 
