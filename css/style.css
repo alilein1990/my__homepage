@@ -78,16 +78,21 @@ body {
 }
 
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
     background-color: var(--primary-color);
 }
-
+.icon{
+    transition: transform 0.15s ease-out;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
 header {
     margin-top: 20px;
     padding-bottom: 8%;
@@ -122,7 +127,7 @@ td {
 
 th {
     -webkit-text-stroke: var(--black) 1px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transition: all 0.5s ease-in-out;
 }
 
@@ -258,8 +263,9 @@ button,
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
+        grid-template-columns: repeat(3, 300px);
+        grid-gap: 20px;
+        justify-content: center;
 
     }
 
@@ -267,8 +273,9 @@ button,
         background-color: var(--white);
         border-radius: 10px;
         border: 15px solid var(--primary-color);
-        width: 90%;
+        width: 100%;
         justify-self: center;
+        
     }
 
     .grid__item--link {
