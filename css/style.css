@@ -57,16 +57,19 @@ body {
 }
 
 .profile {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 100vh;
+    margin: auto;
+    justify-content:center;
     padding-bottom: 250px;
+    /* text-align: center; */
 }
 
 .profile__portrait {
     float: left;
-    width: 250px;
     margin-right: 50px;
     border-radius: 50%;
+    padding-bottom: 20px;
+    width: 250px;
 }
 
 .profile__div {
@@ -331,11 +334,17 @@ button,
     .grid {
         grid-template-columns: 1fr;
     }
+    .profile__portrait {
+        max-width: 150px;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+    }
+    .profile__portrait {
+        max-width: 200px;
     }
 }
 
