@@ -91,20 +91,21 @@ th {
 }
 
 a {
+  box-sizing: content-box; 
   color: #5e6061;
   text-decoration: none;
-  border: none;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
   -webkit-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
-  border: 1px solid transparent;
+  transition: all 0.5s ease-out;
+  border: 2px solid transparent; 
+
 }
 
-a:visited {
+a:active {
   /* visited link */
-  color: rgb(28, 28, 71);
+  color: red;
 }
 
 a:hover {
@@ -112,9 +113,8 @@ a:hover {
   text-decoration: underline;
   color: white;
   background-color: #5e6061;
-  border: 1rem solid;
-  margin: -2px;
 }
+
 
 a:focus {
   /* No underlining when hovering over a link */
@@ -173,13 +173,14 @@ a:focus {
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: right;
+  margin-right: 40px;
 }
 
 #main__right--div {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: 40px;
+  margin-left: -20px;
   margin-top: 20px;
 }
 
