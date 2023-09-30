@@ -21,14 +21,16 @@
 * {
     box-sizing: border-box;
 }
-
+/* display: flex; needed that marging and padding applies between h1 6 nav */
 body {
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     background-color: var(--page-color);
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-list li {
@@ -100,11 +102,6 @@ body {
 .icon:hover{
     transform: scale(1.1);
 }
-header {
-    margin-top: 20px;
-    padding-bottom: 8%;
-}
-
 .grid__item {
     display: inline-block;
     width: 33%;
@@ -154,19 +151,19 @@ th:hover {
     flex-wrap:wrap;
     position: sticky;
     background-color: var(--page-color);
-    top: 0%;
+    z-index: 999;
+    top: 0;
     width: 100%;
-    padding: 15px;
+    padding: 30px;
     margin-bottom: 50px;
 }
 
 /*applies to img & nav*/
 .page-header__item .navigation-list__item{
-    position: relative;
     flex: 0 1 50px;
 }
 
-.page-header .page-header__item:last-child {
+.page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
 }
@@ -348,7 +345,7 @@ button,
         padding-top: 8px;
     }
     .profile__portrait {
-        max-width: 150px;
+        max-width: 200px;
     }
     #contact-form{
         max-height: 400px;
@@ -365,15 +362,21 @@ button,
     .grid__item {
         border: 10px solid var(--primary-color);
     }
-    .page-header__item{
+    .page-header__item:first-child{
         height: 40px;
+        align-self: center;
     }
+    .page-header__item:last-child {
+        text-align: left;
+    }   
     .main__right--div {
         margin-top: 20px;
 
     }
     .page-header  {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+        font-size: smaller;
     }
     .icon{
         max-height: 22px;
@@ -389,7 +392,7 @@ button,
         padding-top: 20px;
     }
     .profile__portrait {
-        max-width: 200px;
+        max-width: 250px;
     }
     *{
         font-size: medium;
@@ -400,12 +403,15 @@ button,
     .page-header__item{
         height: 50px;
     }
+   
     .main__right--div {
         margin-top: 25px;
 
     }
     .page-header  {
         margin-bottom: 30px;
+        padding: 10px;
+        font-size: small;
     }
     
 }
