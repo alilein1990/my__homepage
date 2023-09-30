@@ -63,7 +63,7 @@ body {
 .profile {
     max-width: 100vh;
     margin: auto;
-    padding-bottom: 250px;
+    padding-top: 50px;
 }
 
 .profile__portrait {
@@ -152,6 +152,9 @@ th:hover {
 .page-header {
     display: flex;
     flex-wrap:wrap;
+    position: sticky;
+    background-color: var(--page-color);
+    top: 0%;
     width: 100%;
     padding: 15px;
     margin-bottom: 50px;
@@ -341,13 +344,20 @@ button,
     .grid {
         grid-template-columns: 1fr;
     }
+    .profile{
+        padding-top: 8px;
+    }
     .profile__portrait {
         max-width: 150px;
     }
     #contact-form{
         max-height: 400px;
+        max-width: 400px;
         margin: 0 10px;
         padding: 5px 15px;
+    }
+    .form-div{
+        align-self: center;
     }
     *{
         font-size: small;
@@ -362,15 +372,21 @@ button,
         margin-top: 20px;
 
     }
-    /* .page-header .page-header__item .navigation-list__item {
-        flex-direction: row;
-    } */
+    .page-header  {
+        margin-bottom: 20px;
+    }
+    .icon{
+        max-height: 22px;
+    }
     
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+    }
+    .profile{
+        padding-top: 20px;
     }
     .profile__portrait {
         max-width: 200px;
@@ -388,6 +404,10 @@ button,
         margin-top: 25px;
 
     }
+    .page-header  {
+        margin-bottom: 30px;
+    }
+    
 }
 
 @media all and (max-width: 750px) {
