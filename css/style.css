@@ -282,7 +282,6 @@ button[type=submit]:focus,
     background-color: var(--buttonhover-color);
     opacity: 0.8;
     cursor: pointer;
-    color: var(--black);
     text-decoration: none;
 }
 
@@ -292,7 +291,7 @@ button,
     display: inline-block;
     font-family: inherit;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--black);
     font-weight: bold;
     text-decoration: none;
     padding: 10px;
