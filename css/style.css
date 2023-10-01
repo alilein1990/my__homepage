@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-size: 120%;
     background-color: var(--page-color);
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
@@ -483,7 +482,7 @@ button,
     }
 }
 
-.sun {
+/* .sun {
     animation: 4s color-change infinite alternate linear;
 }
 
@@ -527,4 +526,4 @@ button,
     to {
         transform: translate(100px, 48px);
     }
-}
+} */
