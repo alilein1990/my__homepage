@@ -44,22 +44,32 @@ body {
 
 .about-main {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: auto;
+    justify-content: center;
+    max-width: 1600px;
     margin: 0 60px;
     list-style-type: none;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
 }
 
 .main2__left--div {
     justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 .main2__right--div {
     justify-content: center;
-    margin-left: 300px;
-
+    text-align: center;
+    align-self: center;
+    margin: auto 0;
 }
-
+svg{
+    border: 15px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px var(--secondary-color);
+}
 .about-main-ul {
     list-style: none;
     margin-bottom: 40px;
@@ -407,7 +417,9 @@ button,
     .icon {
         max-height: 22px;
     }
-
+    .about-main {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -424,9 +436,9 @@ button,
         max-width: 250px;
     }
 
-    *{
+    * {
         font-size: medium;
-    } 
+    }
 
     .grid__item {
         border: 15px solid var(--primary-color);
@@ -446,7 +458,11 @@ button,
         padding: 10px;
 
     }
+    .about-main {
+        grid-template-columns: 1fr;
+    }
 }
+
 @media all and (max-width: 750px) {
     .grid {
         grid-gap: 10px;
