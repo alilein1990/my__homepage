@@ -1,7 +1,7 @@
 :root {
     --page-color: #F5F5F5;
     --body-font-family: 'Montserrat', sans-serif;
-    --body-font-weight: 600;
+    --body-font-weight: 900;
 
     --black: black;
     --white: white;
@@ -27,12 +27,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 120%;
     background-color: var(--page-color);
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
     margin: 0;
     padding: 0;
 }
+
 
 .navigation-list li {
     display: inline;
@@ -83,7 +85,7 @@ body {
     justify-content: flex-start;
     align-content: center;
     margin-left: 20px;
-    width: 250px;
+    width: 300px;
 }
 
 .index_h1 {
@@ -375,9 +377,9 @@ button,
         padding: 10px 15px;
     }
 
-    /* * {
+    * {
         font-size: small;
-    } */
+    }
 
     .grid__item {
         border: 10px solid var(--primary-color);
@@ -400,12 +402,11 @@ button,
     .page-header {
         margin-bottom: 30px;
         padding: 10px;
-        /* font-size: smaller; */
     }
-/* 
+
     .icon {
         max-height: 22px;
-    } */
+    }
 
 }
 
@@ -423,9 +424,9 @@ button,
         max-width: 250px;
     }
 
-    /* * {
+    *{
         font-size: medium;
-    } */
+    } 
 
     .grid__item {
         border: 15px solid var(--primary-color);
@@ -443,11 +444,9 @@ button,
     .page-header {
         margin-bottom: 30px;
         padding: 10px;
-        /* font-size: small; */
+
     }
-
 }
-
 @media all and (max-width: 750px) {
     .grid {
         grid-gap: 10px;
