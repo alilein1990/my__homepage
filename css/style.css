@@ -40,20 +40,23 @@ body {
     justify-content: center;
     margin-left: 15px;
 }
-.main-header__div{
+
+.main-header__div {
     text-align: center;
 }
 
-svg{
+svg {
     margin: auto;
     max-height: 300px;
 }
+
 .about-main-ul {
     list-style: none;
     margin-bottom: 40px;
     align-content: center;
     padding-inline-start: 0;
 }
+
 /* main, section{
     margin: auto 0;
 } */
@@ -107,10 +110,12 @@ svg{
     display: inline-block;
     width: 100%;
 }
+
 .about-grid__item {
     display: inline-block;
     width: 100%;
 }
+
 .h1 {
     text-align: center;
     margin-bottom: 25px;
@@ -160,6 +165,7 @@ th:hover {
 
 .page-header__item:last-child {
     flex-grow: 1;
+    flex-shrink: 2;
     text-align: right;
 }
 
@@ -303,16 +309,17 @@ button,
     .about-main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content:center;
+        justify-content: center;
         align-self: center;
         margin: 30px 40px;
         list-style-type: none;
-        grid-gap:20px;
+        grid-gap: 20px;
     }
-    
-    .main2__left--div, .main2__right--div {
+
+    .main2__left--div,
+    .main2__right--div {
         justify-content: center;
-        align-items:center ;
+        align-items: center;
         text-align: center;
         border: 15px solid var(--primary-color);
         border-radius: 10px;
@@ -364,11 +371,13 @@ button,
         padding-top: 8px;
         padding-bottom: 10px;
     }
-    .profile__div_text{
+
+    .profile__div_text {
         text-align: center;
         margin: auto;
         width: 200px;
     }
+
     .profile__portrait {
         max-width: 200px;
     }
@@ -388,7 +397,9 @@ button,
     * {
         font-size: small;
     }
-    .main2__left--div, .main2__right--div {
+
+    .main2__left--div,
+    .main2__right--div {
         border: 5px solid var(--primary-color);
         box-shadow: 3px 3px 2px var(--secondary-color);
     }
@@ -419,6 +430,7 @@ button,
     .icon {
         max-height: 22px;
     }
+
     .about-main {
         grid-template-columns: 1fr;
     }
@@ -441,7 +453,9 @@ button,
     * {
         font-size: medium;
     }
-    .main2__left--div, .main2__right--div {
+
+    .main2__left--div,
+    .main2__right--div {
         border: 8px solid var(--primary-color);
         box-shadow: 5px 5px 3px var(--secondary-color);
     }
@@ -464,6 +478,7 @@ button,
         padding: 10px;
 
     }
+
     .about-main {
         grid-template-columns: 1fr;
     }
@@ -484,7 +499,7 @@ button,
     }
 }
 
-.sun {
+/* .sun {
     animation: 4s color-change infinite alternate linear;
 }
 
@@ -528,4 +543,4 @@ button,
     to {
         transform: translate(100px, 48px);
     }
-}
+} */
