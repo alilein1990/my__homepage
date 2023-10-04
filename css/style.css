@@ -166,6 +166,10 @@ th:hover {
     display: inline;
     justify-content: center;
     list-style: none; 
+    margin-right: 5px;
+}
+.navigation-list li:last-child{
+    margin-right: 0;
 }
 
 .navigation-list__item {
