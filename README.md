@@ -1,11 +1,5 @@
-# my__homepage
+# Homepage from Alina L.
 
-index.html
+This homepage was coded as part of the CF course. It includs my work, my contact details and some information about me. 
 
-work.html
-
-about.html
-
-contact.html
-
-
+It includs HTML & CSS. Some of the CSS components are grid, flexbox, @media and @supports.
