@@ -218,7 +218,7 @@ th:hover {
 
 .main__left--div {
     justify-content: flex-end;
-    text-align: right;
+    text-align: left;
 }
 
 .main__right--div {
@@ -345,6 +345,7 @@ button,
         border: 15px solid var(--primary-color);
         width: 100%;
         justify-self: center;
+        padding: 10px;
 
     }
 
