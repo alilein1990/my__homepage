@@ -35,12 +35,6 @@ body {
 }
 
 
-.navigation-list li {
-    display: inline;
-    justify-content: center;
-    margin-left: 15px;
-}
-
 .main-header__div {
     text-align: center;
 }
@@ -168,15 +162,23 @@ th:hover {
     flex-shrink: 2;
     text-align: right;
 }
+.navigation-list li {
+    display: inline;
+    justify-content: center;
+    list-style: none; 
+}
 
-.navigation-list .navigation-list__item {
-    list-style-type: none;
+.navigation-list__item {
     text-decoration: none;
     font: inherit;
     position: relative;
-    color: var(--black);
+    color: var(--third-color);
+    margin-right: 10px;
 }
-
+/* create space between the li items  */
+.navigation-list__item:last-child {
+    margin-right: 0;
+}
 .navigation-list .navigation-list__item:before,
 .navigation-list .navigation-list__item::after {
     position: absolute;
@@ -361,7 +363,7 @@ button,
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 523px) {
     .grid {
         grid-template-columns: 1fr;
         padding: 10px;
@@ -408,23 +410,37 @@ button,
         border: 10px solid var(--primary-color);
     }
 
-    .page-header__item:first-child {
-        height: 40px;
-        align-self: right;
-    }
-
-    .page-header__item:last-child {
-        text-align: left;
-    }
-
-    .main__right--div {
-        margin-top: 20px;
-
-    }
-
     .page-header {
         margin-bottom: 30px;
         padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-list {
+        text-align: center;
+        padding-inline-start: 0;
+    }   
+    
+    
+    .navigation-list li:nth-child(3) {
+        /* order: 1; */
+        color: white;
+    }
+    .navigation-list li:nth-child(1) {
+        /* order: 1; */
+        color: red;
+    }
+    .page-header__item:first-child {
+        height: 40px;
+    }
+    /* .page-header__item:last-child {
+        text-align:center ;
+    } */
+   
+    .main__right--div {
+        margin-top: 20px;
+
     }
 
     .icon {
@@ -436,7 +452,7 @@ button,
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 524px) and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
         padding: 15px;
@@ -464,6 +480,12 @@ button,
         border: 15px solid var(--primary-color);
     }
 
+    .page-header {
+        margin-bottom: 30px;
+        padding: 10px;
+
+    }
+
     .page-header__item {
         height: 50px;
     }
@@ -473,11 +495,6 @@ button,
 
     }
 
-    .page-header {
-        margin-bottom: 30px;
-        padding: 10px;
-
-    }
 
     .about-main {
         grid-template-columns: 1fr;
