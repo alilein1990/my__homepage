@@ -35,12 +35,7 @@ body {
 }
 
 
-.navigation-list li {
-    display: inline;
-    justify-content: center;
-    margin-left: 15px;
-}
-.main-header__div{
+.main-header__div {
     text-align: center;
 }
 
@@ -406,11 +401,13 @@ button,
     * {
         font-size: small;
     }
-    .main2__left--div {
+
+    .main2__left--div,
+    .main2__right--div {
         border: 5px solid var(--primary-color);
-        box-shadow: 5px 5px 3px var(--secondary-color);
-        padding:10px;
+        box-shadow: 3px 3px 2px var(--secondary-color);
     }
+
     .grid__item {
         border: 10px solid var(--primary-color);
     }
@@ -475,10 +472,11 @@ button,
     * {
         font-size: medium;
     }
-    .main2__left--div, .main2__right--div {
-        border: 5px solid var(--primary-color);
+
+    .main2__left--div,
+    .main2__right--div {
+        border: 8px solid var(--primary-color);
         box-shadow: 5px 5px 3px var(--secondary-color);
-        padding:10px;
     }
 
     .grid__item {
@@ -501,7 +499,6 @@ button,
     }
 
 
-    }
     .about-main {
         grid-template-columns: 1fr;
     }
