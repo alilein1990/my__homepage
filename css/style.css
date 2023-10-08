@@ -51,9 +51,7 @@ svg {
     padding-inline-start: 0;
 }
 
-/* main, section{
-    margin: auto 0;
-} */
+
 .profile {
     max-width: 100vh;
     margin: auto;
@@ -160,13 +158,15 @@ th:hover {
     flex-shrink: 2;
     text-align: right;
 }
+
 .navigation-list li {
     display: inline;
     justify-content: center;
-    list-style: none; 
+    list-style: none;
     margin-right: 5px;
 }
-.navigation-list li:last-child{
+
+.navigation-list li:last-child {
     margin-right: 0;
 }
 
@@ -177,10 +177,12 @@ th:hover {
     color: var(--third-color);
     margin-right: 10px;
 }
+
 /* create space between the li items  */
 .navigation-list__item:last-child {
     margin-right: 0;
 }
+
 .navigation-list .navigation-list__item:before,
 .navigation-list .navigation-list__item::after {
     position: absolute;
@@ -422,25 +424,22 @@ button,
     .navigation-list {
         text-align: center;
         padding-inline-start: 0;
-    }   
-    
-    
-    .navigation-list li:nth-child(1) a {
-        /* order: 1; */
+    }
+
+    /* .navigation-list li:nth-child(1) a {
+        order: 1;
         color: white;
     }
     .navigation-list li:nth-child(even) a {
-        /* order: 1; */
+        order: 1;
         color: red;
-    }
+    } */
+
     .page-header__item:first-child {
-        margin-bottom:15px;
+        margin-bottom: 15px;
         height: 40px;
     }
-    /* .page-header__item:last-child {
-        text-align:center ;
-    } */
-   
+
     .main__right--div {
         margin-top: 20px;
 
