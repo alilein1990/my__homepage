@@ -51,9 +51,7 @@ svg {
     padding-inline-start: 0;
 }
 
-/* main, section{
-    margin: auto 0;
-} */
+
 .profile {
     max-width: 100vh;
     margin: auto;
@@ -63,7 +61,6 @@ svg {
 }
 
 .profile__portrait {
-    /* float: left; */
     margin-right: 20px;
     border-radius: 50%;
     padding-bottom: 20px;
@@ -128,7 +125,6 @@ table {
 th {
     width: 33%;
     -webkit-text-stroke: var(--black) 1px;
-    /* color: var(--white); */
     background-color: var(--primary-color);
     transition: all 0.5s ease-in-out;
     border-radius: 9px;
@@ -162,13 +158,15 @@ th:hover {
     flex-shrink: 2;
     text-align: right;
 }
+
 .navigation-list li {
     display: inline;
     justify-content: center;
-    list-style: none; 
+    list-style: none;
     margin-right: 5px;
 }
-.navigation-list li:last-child{
+
+.navigation-list li:last-child {
     margin-right: 0;
 }
 
@@ -179,10 +177,12 @@ th:hover {
     color: var(--third-color);
     margin-right: 10px;
 }
+
 /* create space between the li items  */
 .navigation-list__item:last-child {
     margin-right: 0;
 }
+
 .navigation-list .navigation-list__item:before,
 .navigation-list .navigation-list__item::after {
     position: absolute;
@@ -244,7 +244,6 @@ th:hover {
 #contact-form {
     background-color: var(--primary-color);
     max-width: 500px;
-    /*center form > margin: 0 auto; */
     margin: 0 auto;
     padding: 20px 40px;
     border-radius: 5px;
@@ -428,25 +427,22 @@ button,
     .navigation-list {
         text-align: center;
         padding-inline-start: 0;
-    }   
-    
-    
-    .navigation-list li:nth-child(1) a {
-        /* order: 1; */
+    }
+
+    /* .navigation-list li:nth-child(1) a {
+        order: 1;
         color: white;
     }
     .navigation-list li:nth-child(even) a {
-        /* order: 1; */
+        order: 1;
         color: red;
-    }
+    } */
+
     .page-header__item:first-child {
-        margin-bottom:15px;
+        margin-bottom: 15px;
         height: 40px;
     }
-    /* .page-header__item:last-child {
-        text-align:center ;
-    } */
-   
+
     .main__right--div {
         margin-top: 20px;
 
@@ -537,7 +533,7 @@ button,
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-@keyframes color-change {
+/* @keyframes color-change {
     0% {
         fill: var(--sun-0);
     }
