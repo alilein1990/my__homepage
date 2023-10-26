@@ -254,6 +254,9 @@ th:hover {
 .form-div {
     padding: 20px;
 }
+.error-message{
+    color: red;
+}
 
 label {
     width: 100%;
