@@ -252,6 +252,7 @@ th:hover {
 
 .form-div {
     padding: 20px;
+    margin-bottom: -10px;
 }
 .error-message{
     color: red;
@@ -273,6 +274,7 @@ textarea {
     display: inline-block;
     border: 2px solid var(--secondary-color);
     border-radius: 10px;
+    font: inherit;
     transition: transform 0.3s ease;
 }
 

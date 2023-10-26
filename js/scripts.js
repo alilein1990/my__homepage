@@ -1,5 +1,6 @@
 (function() {
     let emailInput = document.querySelector('#email');
+    let form = document.querySelector('#contact-form');
 
     function showErrorMessage(input, message) {
         let container = input.parentElement;
@@ -31,6 +32,13 @@
         showErrorMessage(emailInput, null);
         return true;
     }
+
+    form.addEventListener('submit', function (e){
+        e.preventDefault();
+        if(validateEmail()){
+            alert('Thank you for your submission');
+        }
+    })
 
     emailInput.addEventListener('input', validateEmail);
 })();
