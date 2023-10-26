@@ -22,34 +22,57 @@
             class="page-header__item">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
-                <li role="presentation"> <a role="menuitem" href="index.html" class="navigation-list__item">HOME</a></li>
-               
-                <li role="presentation"><a role="menuitem" href="about.html" class="navigation-list__item">ABOUT ME</a></li>
-                
-                <li role="presentation"><a role="menuitem" href="contact.html" class="navigation-list__item">CONTACT</a></li>
-                
+                <li role="presentation"> <a role="menuitem" href="index.html" class="navigation-list__item">HOME</a>
+                </li>
+
+                <li role="presentation"><a role="menuitem" href="about.html" class="navigation-list__item">ABOUT ME</a>
+                </li>
+
+                <li role="presentation"><a role="menuitem" href="contact.html" class="navigation-list__item">CONTACT</a>
+                </li>
+
                 <li role="presentation"><a role="menuitem" href="work.html" class="navigation-list__item">WORK</a></li>
-                
+
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <h1 class="h1"> Contact Information </h1>
         <div class="main_container">
-        <div class="">
-            <h2>Ali Lein</h2>
-            <p>Müllerstr. 65</p>
-            <p>12435 Berlin</p>
-            <p>Deutschland</p>
+            <div class="">
+                <h2>Ali Lein</h2>
+                <p>Müllerstr. 65</p>
+                <p>12435 Berlin</p>
+                <p>Deutschland</p>
+            </div>
+            <div class="main__right--div">
+                <a href="tel:+493048492016" class="contact__a">+49 30 4849 2016</a>
+                <br><br>
+                <a href="mailto:ali_lein@web.de" class="contact__a">ali_lein@web.de </a>
+                <br><br>
+                <a href="mailto:ali_lein@web.de" class="contact__a">Contact me!</a>
+            </div>
         </div>
-        <div class="main__right--div">
-            <a href="tel:+493048492016" class="contact__a">+49 30 4849 2016</a>
-            <br><br>
-            <a href="mailto:ali_lein@web.de" class="contact__a">ali_lein@web.de </a>
-            <br><br>
-            <a href="mailto:ali_lein@web.de" class="contact__a">Contact me!</a>
+
+        <div class="form-div">
+            <form id="contact-form">
+                <label for="name" class="standard-label">Name </label>
+                <input type="name" id="name" required>
+                <br>
+                <label for="email" class="standard-label">Email: </label>
+                <input type="email" id="email" required>
+                <br>
+                <label for="telephone" class="standard-label">Telephone: </label>
+                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone" placeholder="0012-345-5678-9012">
+                <br>
+                <label for="message" class="standard-label">Message: </label>
+                <textarea maxlength="240" required id="message"></textarea>
+                <br>
+                <button type="submit">Please submit your inquiry</button>
+            </form>
         </div>
+<<<<<<< Updated upstream
     </div>
     
     <div class="form-div">
@@ -76,6 +99,17 @@
             <a href="https://github.com/alilein1990"><img src="./img/211904_social_github_icon.svg" alt="icon for github" class="icon" /></a>
             <a href="https://de.linkedin.com/in/alina-leinweber-901b94135"  ><img src="./img/2006470_in_linked_network_social_icon.svg" alt="icon for linkedin"
                     class="icon" /></a>
+=======
+    </main>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social_media">
+            <a href="https://github.com/alilein1990.html"><img src="./img/211904_social_github_icon.svg"
+                    alt="icon for github" class="icon" /></a>
+            <a href="https://de.linkedin.com/in/alina-leinweber-901b94135.html"><img
+                    src="./img/2006470_in_linked_network_social_icon.svg" alt="icon for linkedin" class="icon" /></a>
+
+>>>>>>> Stashed changes
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
